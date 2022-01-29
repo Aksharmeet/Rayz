@@ -1,0 +1,451 @@
+{
+ "chandeliers": [
+
+           {
+                "id": "ch_0",
+            "name": "Chanderlier main",
+            "disc": "These premium artefacts add brilliance to your decor. These artefacts are highlighted with the magnificence of the Swarovski Elements crystal galss,Spectra Crystal Glass, Egyptian Crystal and k9 Crystal. Along with the luxurious Egyptian Asfour crystals range.",
+            "url": "/Images/Chandeliers/chandelier_main.png",
+            "category": {
+                "cat": "decorative lighting",
+                "sub_cat": "chandelier"
+                }
+            },
+            {
+                "id": "ch_1",
+                "name": "spanish chandeliers",
+                "disc": "Looking for modern dining room chandeliers? Or just an exquisite piece of luminaire to elevate your rooms? Look no further. Explore our range of hand-cut and blown Bohemia glass Spanish chandeliers that can cast mesmerizing patterns across your spaces.",
+                "url": "/Images/Chandeliers/spanish_chandelier.png",
+                "category": {
+                    "cat": "decorative lighting",
+                    "sub_cat": "chandelier"
+                },
+                "spanish_chandeliers": [
+                    {
+                        "name": "castillo",
+                        "product_id": "CL32001",
+                        "quantity": "1 N",
+                        "mrp": "4 99 000",
+                        "disc": {
+                            "1":"A modern interpretation of Spain's regal castles, the Castillo blends the beauty of classic architecture with modern technology. Handcrafted with Bohemia Crystal Glass, each branch of the Castillo works in perfect symphony to create an ambience that makes your space look surreal. Pair it up with family of wall lights to set your spaces apart.",
+                            "2": "The Spanish Collection brings to you wondrous masterpieces that fuse together Spanish artistry with the glassmaking traditions of Bohemia.Hand cut, engraved, and blown, the glass in these chandeliers have a unique form and look. The high flexibility glass with a high refractive index can cast the whole colour spectrum across your space. These harmonious compositions like the great works of Goya and Picasso come together with innovative technology to bring the very poetry of the Spanish soul to life."
+                        },
+                        "material": "Handcrafted Bohemia Crystal glass",
+                        "features":{
+                            "1":"Dimmable*",
+                            "2":"Specially designed for energy saving lamps",
+                            "3":"Complete range of harmonized designs"
+                        },
+                        "specs": {
+                            "Lamp Base": "G9",
+                            "Colour": "Honey",
+                            "Installation": "Ceiling Suspended",
+                            "Warranty": "10 years",
+                            "Watt" : "32 x 2w LED",
+                            "Dimesions": "Dia 90 x Height 68(in cm)",
+                            "Voltage": "220-240 volts, 50Hz"
+                        },
+                        "gallery": {
+                            "1": "/Images/Chandeliers/castillo/castillo_1.jpg",
+                            "2": "/Images/Chandeliers/castillo/castillo_2.jpg",
+                            "3": "/Images/Chandeliers/castillo/castillo_3.jpg"
+                        }
+                    },
+                    {
+                        "name": "didyut",
+                        "product_id": "CL10001",
+                        "quantity": "1 N",
+                        "mrp": "3 29 000",
+                        "disc": {
+                            "1":"Inspired by the lily Lirio, the Didyut is a Spanish lighting marvel. Handcrafted with Bohemia Crystal Glass, the Didyut creates an unparalleled ambinece. With the vibrant and alluring color, it is the perfect centerpiece to compliment modern decor. Pair it up with the family of lights to set your space apart.",
+                            "2": "The Spanish Collection brings to you wondrous masterpieces that fuse together Spanish artistry with the glassmaking traditions of Bohemia.Hand cut, engraved, and blown, the glass in these chandeliers have a unique form and look. The high flexibility glass with a high refractive index can cast the whole colour spectrum across your space. These harmonious compositions like the great works of Goya and Picasso come together with innovative technology to bring the very poetry of the Spanish soul to life."
+                        },
+                        "material": "Mild steel canopy & frame with Bohemia Crystal glass",
+                        "features":{
+                            "1":"Dimmable*",
+                            "2":"Specially designed for energy saving lamps",
+                            "3":"Complete range of harmonized designs"
+                        },
+                        "specs": {
+                            "Lamp Base": "G9",
+                            "Colour": "Chrome finish with honey crystal glass, Also available in fume colour",
+                            "Installation": "Ceiling Suspended",
+                            "Warranty": "10 years",
+                            "Watt" : "10 x 2W LED",
+                            "Dimesions": "Dia 20 X Height 145 (in cm)",
+                            "Voltage": "220-240 volts, 50Hz"
+                        },
+                        "gallery": {
+                            "1": "/Images/Chandeliers/didyut/didyut_1.jpg",
+                            "2": "/Images/Chandeliers/didyut/didyut_2.jpg",
+                            "3": "/Images/Chandeliers/didyut/didyut_3.jpg"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "ch_2",
+                "name": "italian chandeliers",
+                "disc": "Indulge in the excellence of traditional Murrine craftsmanship with our Italian crystal chandelier collection. A wide variety of select chandeliers made from Murano glass and powered by the latest LED technology. They can add brilliance to your décor through their sheer presence or with their dimmable, mesmerizing illumination.",
+                "url": "/Images/Chandeliers/italian_chandelier.png",
+                "category": {
+                    "cat": "decorative lighting",
+                    "sub_cat": "chandelier"
+                },
+                "italian_chandeliers": [
+                    {
+                        "name": "ringlet",
+                        "product_id": "CG13001",
+                        "quantity": "1 N",
+                        "mrp": "7 29 000",
+                        "disc": {
+                            "1":"With its unique sculptural design and luxurious look, the Ringlet is handcrafted from exquisite Murano Glass. The Italian masterpiece is the perfect addition to your regal decor and creates a unique pattern on illumination. The stunning dual tone finish further highlights your decor.",
+                            "2": "Craftsmanship perfected since the Renaissance, and beauty inspired by visions of architectural marvels comes together in the Italian Collection.Crafted in Murrine technique, these delicate compositions creates effects with a variety of colors, shades, and patterns. Blending traditional craftsmanship with state of the art technology (LED), these alluring chandeliers carry the very spirit of the floating city, as they hover like dreams above us. Alluring, beautiful and majestic."
+                        },
+                        "material": "Mild steel canopy and frame with Murano Glass",
+                        "features":{
+                            "1":"Dimmable*",
+                            "2":"Unique sculptural design",
+                            "3":"Dual Tone finish"
+                        },
+                        "specs": {
+                            "Lamp Base": "E27",
+                            "Colour": "Chrome finish canopy & frame with white & transparent Murano Glass",
+                            "Installation": "Ceiling Suspended",
+                            "Warranty": "5 years",
+                            "Watt" : "13 x 40W GLS* / 5W LED",
+                            "Dimesions": "Dia 90 x Height 95 (in cm)",
+                            "Voltage": "220-240 volts, 50Hz"
+                        },
+                        "gallery": {
+                            "1": "/Images/Chandeliers/ringlet/rignlet_0.png",
+                            "2": "/Images/Chandeliers/ringlet/ringlet_1.jpg",
+                            "3": "/Images/Chandeliers/ringlet/ringlet_2.jpg"
+                        }
+                    },
+                    {
+                        "name": "callisto",
+                        "product_id": "CL12002",
+                        "quantity": "1 N",
+                        "mrp": "7 49 900",
+                        "disc": {
+                            "1":"Named after its celestial inspiration, Callisto glows up like the moon and creates an unreal and enchanting ambience in your abodes. the handcrafted flowers patterns are made up from Murano Glass, which makes it a unique piece of art even when unlit. This centerpiece brings your decor to life.",
+                            "2": "Craftsmanship perfected since the Renaissance, and beauty inspired by visions of architectural marvels comes together in the Italian Collection.Crafted in Murrine technique, these delicate compositions creates effects with a variety of colors, shades, and patterns. Blending traditional craftsmanship with state of the art technology (LED), these alluring chandeliers carry the very spirit of the floating city, as they hover like dreams above us. Alluring, beautiful and majestic."
+                        },
+                        "material": "Handcrafted Murano Glass",
+                        "features":{
+                            "1":"Dimmable*",
+                            "2":"Hand crafted flower patterns",
+                            "3":"Dual Tone Finish"
+                        },
+                        "specs": {
+                            "Lamp Base": "E27",
+                            "Colour": "white",
+                            "Installation": "Ceiling Suspended",
+                            "Warranty": "5 years",
+                            "Watt" : "12 x 40W Halogen",
+                            "Dimesions": "Dia 80 x Height 80 (in cm)",
+                            "Voltage": "220-240 volts, 50Hz"
+                        },
+                        "gallery": {
+                            "1": "/Images/Chandeliers/callisto/callisto_1.jpg",
+                            "2": "/Images/Chandeliers/callisto/callisto_2.jpg",
+                            "3": "/Images/Chandeliers/callisto/callisto_3.jpg"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "ch_3",
+                "name": "egyptian chandeliers",
+                "disc": "Premium Asfour crystal chandeliers add royalty & ambience to your spaces through lighting technologies of Dimmability & Interchangeability of lamps.",
+                "url": "/Images/Chandeliers/egyptian_asfour_chandeliers.png",
+                "category": {
+                    "cat": "decorative lighting",
+                    "sub_cat": "chandelier",
+                    "egyptian_chandeliers": [
+                        {
+                            "name": "margorita",
+                            "product_id": "CP15002",
+                            "quantity": "1 N",
+                            "mrp": "2 73 990",
+                            "disc": {
+                                "1":"Crafted with flawless Asfour crystals, the Margorita collection is designed to inspire awe. The artistry of these chandeliers is unparalleled, and can liven up your spaces like no other. A perfect mix of aesthetics and modern technology, the it's the perfect centerpiece. Pair it up with the family of lights to set your space apart.",
+                                "2": "Crafted with exotic crystals from Egypt, these chandeliers are known for their high quality precision cuts which cause a dazzling rainbow reflection pattern.The emblem on the crystal certifies that they will remain as luminous as they are on the first day, for decades to come."
+                            },
+                            "material": "Mild steel with Asfour Crystal Glass",
+                            "features":{
+                                "1":"Dimmable*",
+                                "2":"Harmonized design with matching wall lights"
+                            },
+                            "specs": {
+                                "Lamp Base": "E14",
+                                "Colour": "Gold and copper",
+                                "Installation": "Ceiling Suspended",
+                                "Warranty": "1 years",
+                                "Watt" : "4W LED filament lamp",
+                                "Dimesions": "Dia 100 x Height 56 (in cm)",
+                                "Voltage": "220-240 volts, 50Hz"
+                            },
+                            "gallery": {
+                                "1": "/Images/Chandeliers/margorita/margorita_1.jpg",
+                                "2": "/Images/Chandeliers/margorita/margorita_2.jpg",
+                                "3": "/Images/Chandeliers/margorita/margorita_3.jpg"
+                            }
+                        },
+                        {
+                            "name": "margorita",
+                            "product_id": "CP15001",
+                            "quantity": "1 N",
+                            "mrp": "1 95 990",
+                            "disc": {
+                                "1":"Crafted with flawless Asfour crystals, the Margorita collection is designed to inspire awe. The artistry of these chandeliers is unparalleled, and can liven up your spaces like no other. A perfect mix of aesthetics and modern technology, the it's the perfect centerpiece. Pair it up with the family of lights to set your space apart.",
+                                "2": "Crafted with exotic crystals from Egypt, these chandeliers are known for their high quality precision cuts which cause a dazzling rainbow reflection pattern.The emblem on the crystal certifies that they will remain as luminous as they are on the first day, for decades to come."
+                            },
+                            "material": "Mild Steel with clear Asfour Crystal Glass",
+                            "features":{
+                                "1":"Dimmable*",
+                                "2":"Harmonized design with matching wall lights"
+                            },
+                            "specs": {
+                                "Lamp Base": "E14",
+                                "Colour": "gold and cooper",
+                                "Installation": "Ceiling Suspended",
+                                "Warranty": "1 years",
+                                "Watt" : "4W LED filament lamp",
+                                "Dimesions": "Dia 75 x Height 56 (in cm)",
+                                "Voltage": "220-240 volts, 50Hz"
+                            },
+                            "gallery": {
+                                "1": "/Images/Chandeliers/margorita_1/margorita_1.jpg",
+                                "2": "/Images/Chandeliers/margorita_1/margorita_2.jpg",
+                                "3": "/Images/Chandeliers/margorita_1/margorita_3.jpg"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "ch_4",
+                "name": "borosilicate glass chandeliers",
+                "disc": "Add magic to your décor with strong, durable & beautiful borosilicate glass chandeliers.",
+                "url": "public/Images/Chandeliers/borosilicate-glass-chandelier.png",
+                "category": {
+                    "cat": "decorative lighting",
+                    "sub_cat": "chandelier"
+                },
+                "borosillicate_glass": [
+                    {
+                        "name": "calligo",
+                        "product_id": "CG15001",
+                        "quantity": "1 N",
+                        "mrp": "95 990",
+                        "disc": {
+                            "1":"With its rich European legacy and elegant glow, the Calligo makes a stunning statement wherever it’s placed. Inspired by the celestial extravagance, the Borosilicate piece creates a patterned illumination, adding magic to your spaces.",
+                            "2": "Crafted from high quality Borosilicate Glass, these chandeliers are made to enchant and last. They owe their strength to the unique combination of oxides and are significantly resistant to high temperature change without compromising on the illumination.This range of spectacular and robust beauties, handcrafted to perfection will enchant your spaces for years to come."
+                        },
+                        "material": "Mild steel canopy and base with Borosilicate Glass branches",
+                        "features":{
+                            "1":"Dimmable*",
+                            "2":"Uniform illumination with no browning effect of glass",
+                            "3": "Available with matching chandeliers in different sizes"
+                        },
+                        "specs": {
+                            "Lamp Base": "G9",
+                            "Colour": "chrome finish",
+                            "Installation": "Ceiling Flushed",
+                            "Warranty": "1 year",
+                            "Watt" : "15 x 40W Halogen / 2W LED",
+                            "Dimesions": "Dia 64 x Height 47 (in cm)",
+                            "Voltage": "220-240 volts, 50Hz"
+                        },
+                        "gallery": {
+                            "1": "/Images/Chandeliers/calligo/calligo_1.jpg",
+                            "2": "/Images/Chandeliers/calligo/calligo_2.jpg",
+                            "3": "/Images/Chandeliers/calligo/calligo_3.jpg"
+                        }
+                    },
+                    {
+                        "name": "Svatika",
+                        "product_id": "CG5001",
+                        "quantity": "1 N",
+                        "mrp": "44 990",
+                        "disc": {
+                            "1":"Inspired from the Victorian chandelier, the Svatika is a modern piece of lighting draped with ornamental glass loops. The high quality Borosilicate glass produces a mesmerizing prism effect of cascading colours. Immerse yourself in what we call, an indulgent experience. Pair it up with family of lights to set your space apart.",
+                            "2": "Crafted from high quality Borosilicate Glass, these chandeliers are made to enchant and last. They owe their strength to the unique combination of oxides and are significantly resistant to high temperature change without compromising on the illumination.This range of spectacular and robust beauties, handcrafted to perfection will enchant your spaces for years to come."
+                        },
+                        "material": "Borosilicate Glass branches with chrome base",
+                        "features":{
+                            "1":"Dimmable*",
+                            "2":"Available with matching wall lights and pendants"
+                        },
+                        "specs": {
+                            "Lamp Base": "G9",
+                            "Colour": "translucent glass",
+                            "Installation": "Ceiling flushed",
+                            "Warranty": "1 years",
+                            "Watt" : "5 x 40W Halogen / 5 x 2W LED",
+                            "Dimesions": "Dia 51 x Height 33 (in cm)",
+                            "Voltage": "220-240 volts, 50Hz"
+                        },
+                        "gallery": {
+                            "1": "/Images/Chandeliers/svatika/svatika_1.jpg",
+                            "2": "/Images/Chandeliers/svatika/svatika_2.jpg",
+                            "3": "/Images/Chandeliers/svatika/svatika_3.jpg"
+                        }
+                    }
+                ]
+            
+            },
+            {
+                "id": "ch_5",
+                "name": "k9 crystal chandeliers",
+                "disc": "Crafted for vintage homes, these high-quality K9 crystal chandeliers add elegance to your spaces. These chandeliers are equipped with the latest lighting technology including Dimmability and Iinterchangeability of lamps.",
+                "url": "public/Images/Chandeliers/k9_crystal_chandelier.png",
+                "category": {
+                    "cat": "decorative lighting",
+                    "sub_cat": "chandelier"
+                },
+                "k9_crsytal": [
+                    {
+                        "name": "zentra",
+                        "product_id": "CG16002",
+                        "quantity": "1 N",
+                        "mrp": "3 39 990",
+                        "disc": {
+                            "1":"It's not everyday that you see vintage styles fitting seamlessly into modern homes. With its cast copper body and K9 crystals, the golden color Zentra designer family is truly a sight to behold. The artistic design of this awe-inspiring family stands out even when not lit. Pair it up with the family of lights to set your space apart.",
+                            "2": "With exceptional physical properties and breathtaking design, K9 chandeliers are the perfect amalgamation of durability and beauty. These high quality crystals are always shining and can be polished with ease. The K9 crystal being an optical borosilicate crown glass crystal, promises high quality and exceptional illumination. These exquisite chandeliers are definitely value for money."
+                        },
+                        "material": "Cast copper with K9 Crystal",
+                        "features":{
+                            "1":"Dimmable*",
+                            "2":"Easy height adjustment",
+                            "3": "Harmonized design with matching wall lights"
+                        },
+                        "specs": {
+                            "Lamp Base": "E14",
+                            "Colour": "golden and copper",
+                            "Installation": "Ceiling Suspended",
+                            "Warranty": "1 year",
+                            "Watt" : "16 x 40W Candle / 4W LED Filament Lamp",
+                            "Dimesions": "Dia 98 x Height 240 (in cm)",
+                            "Voltage": "220-240 volts, 50Hz"
+                        },
+                        "gallery": {
+                            "1": "/Images/Chandeliers/k9_crystal/zentra_1.jpg",
+                            "2": "/Images/Chandeliers/k9_crystal/zentra_2.jpg",
+                            "3": "/Images/Chandeliers/k9_crystal/zentra_3.jpg"
+                        }
+                    },
+                    {
+                        "name": "Favonious",
+                        "product_id": "CG21001",
+                        "quantity": "1 N",
+                        "mrp": "2 97 990",
+                        "disc": {
+                            "1":"The Favonious is a lavish luminaire with elaborate design. Radiating with its flawless crystals, it's also an indulgent piece of décor in itself. Pair it up with the family of lights to set your space apart.",
+                            "2": "With exceptional physical properties and breathtaking design, K9 chandeliers are the perfect amalgamation of durability and beauty. These high quality crystals are always shining and can be polished with ease. The K9 crystal being an optical borosilicate crown glass crystal, promises high quality and exceptional illumination. These exquisite chandeliers are definitely value for money."
+                        },
+                        "material": "K9 Crystal",
+                        "features":{
+                            "1":"Dimmable*",
+                            "2":"Harmonized design with matching wall lights"
+                        },
+                        "specs": {
+                            "Lamp Base": "E14",
+                            "Colour": "Golden",
+                            "Installation": "Ceiling Suspended",
+                            "Warranty": "1 Year",
+                            "Watt" : "21 X 40W GLS* Candle/ 4W LED filament lamp",
+                            "Dimesions": "Dia 125 x Height 75 (in cm)",
+                            "Voltage": "220-240 volts, 50Hz"
+                        },
+                        "gallery": {
+                            "1": "/Images/Chandeliers/favonious/favionious_1.jpg",
+                            "2": "/Images/Chandeliers/favonious/favionious_2.jpg",
+                            "3": "/Images/Chandeliers/favonious/favionious_3.jpg"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "ch_6",
+                "name": "fusion chandeliers",
+                "disc": "By combining acrylic, borosilicate glass, wood, metal, opal glass and innovative LED technologies, these sculpted designer lights redefine beauty.",
+                "url": "/Images/Chandeliers/fusion_chandelier.png",
+                "category": {
+                    "cat": "decorative lighting",
+                    "sub_cat": "chandelier"
+                },
+                "fusion": [
+                    {
+                        "name": "almica",
+                        "product_id": "CG81611E",
+                        "quantity": "1 N",
+                        "mrp": "14 090",
+                        "disc": {
+                            "1":"Indulge your senses in an ambience crafted by textured light. The Almicia seeds exclusivity to your décor through satin glass design, low-glare illumination and brilliant abstract patterns. It comes with a dimmability option so that you can modulate light intensity as per comfort.",
+                            "2": ""
+                        },
+                        "material": "Stainless Steel & Satined Glass",
+                        "features":{
+                            "1":"Dimmabl Optional",
+                            "2":"Harmonized Design",
+                            "3": "Ease of Interchangeability of bulbs",
+                            "4": "unique pattern on illumination"
+                        },
+                        "specs": {
+                           "type_of_lamp": "GLS/LED",
+                           "Dimesions": "L47 x H30 X W47",
+                           "no._of_lamp": "8",
+                           "fitting/cap": "G9",
+                           "rated_wattage": "8 x 18w",
+                           "total_wattage": "144w",
+                           "color": "chrome & white",
+                           "lamp_included": "no"
+
+                        },
+                        "gallery": {
+                            "1": "/Images/Chandeliers/almica/almica_1.jpg",
+                            "2": "/Images/Chandeliers/almica/almica_2.jpg",
+                            "3": "/Images/Chandeliers/almica/almica_3.jpg"
+                        }
+                    },
+                    {
+                        "name": "albero",
+                        "product_id": "CL12001",
+                        "quantity": "1 N",
+                        "mrp": "45 990",
+                        "disc": {
+                            "1":"A perfect pairing of classic elegance and cutting edge technology, the Albero is an inbuilt LED luminaire that exudes a captivating mood within the room.",
+                            "2": ""
+                        },
+                        "material": "Chrome electropated Iron Frame + PC & Iron Lamp shade",
+                        "features":{
+                            "1":"Dimmabl",
+                            "2":"Low maintenance with in built driver with energy efficient LEDs.",
+                            "3": "No Glass discolouration.",
+                            "4": "Low glare illumination"
+                        },
+                        "specs": {
+                            "Lamp Base": "Inbuilt LED",
+                            "Colour": "Chrome FInish",
+                            "Installation": "Ceiling Suspended",
+                            "Warranty": "2 Years",
+                            "Watt" : "12 x 3W",
+                            "Dimesions": "Dia 65 x Height 120 (in cm)",
+                            "Voltage": "220-240 volts, 50Hz"
+
+                        },
+                        "gallery": {
+                            "1": "/Images/Chandeliers/albero/albero_1.jpg",
+                            "2": "/Images/Chandeliers/albero/albero_2.jpg",
+                            "3": "/Images/Chandeliers/albero/albero_3.jpg"
+                        }
+                    }
+                
+                
+                ]
+            }
+         ]
+}

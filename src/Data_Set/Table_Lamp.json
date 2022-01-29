@@ -1,0 +1,107 @@
+{
+"Table_Lamp": {
+    "name": "Table Lamp",
+    "url": "/Images/Table_Lamps/img_main.png",
+    "disc": "Breath-taking in both form and function, our collection of table lamp designs work for both decorative and study purposes. They are equipped with the latest LED technology that makes these modern table lamps effective as task lighting as well as ambient lighting.",
+    "category": {
+        "cat": "decorative lighting",
+        "sub_cat": "table_lamp"
+        },
+    "table_lamps": [
+
+            {
+                "name": "J'Aime",
+                "product_id": "TP1001",
+                "quantity": "1 N",
+                "mrp": "9 490",
+                "disc": {
+                    "1":"he J'aime possesses both a practical and decorative element. With a stunning shade and easy to mount on any table, it's the go-to accessory for any living space.",
+                    "2": ""
+                },
+                "material": "Ashwood with fabric shade",
+                "features":{
+                    "1":"Minimised glare",
+                    "2":"In-line on/off switch",
+                    "3":""
+                },
+                "specs": {
+                    "Lamp Base": "E27",
+                    "Colour": "Natural Wood",
+                    "Installation": "Table Mounted",
+                    "Warranty": "1 years",
+                    "Watt" : "1 x 60W GLS*/7W LED",
+                    "Dimesions": "Dia 28 x Height 45(in cm)",
+                    "Voltage": "220-240 volts, 50Hz"
+                },
+                "gallery": {
+                    "1": "/Images/Table_Lamps/jaime/jaime_1.jpg",
+                    "2": "/Images/Table_Lamps/jaime/jaime_2.jpg",
+                    "3": "/Images/Table_Lamps/jaime/jaime_3.jpg"
+                }
+            },
+
+            {
+                "name": "Gaisma",
+                "product_id": "TL1401G",
+                "quantity": "1 N",
+                "mrp": "5 990",
+                "disc": {
+                    "1":"Gaisma takes inspiration from the play of light and shadow. Its ingenious design employs simple mechanics to create breath taking patterns across your spaces. The perforated shade provides the perfect opportunity to creatively rethink and re-invent your décor. The lamp itself provides both an energy-efficient LED lighting solution and an ambience setting Halogen lighting option.",
+                    "2": ""
+                },
+                "material": "Aluminium",
+                "features":{
+                    "1":"Dimmable Optional*",
+                    "2":"Harmonized Designs",
+                    "3":"Ease of interchangeability of lamps",
+                    "4":"Unique Pattern on Illumination"
+                },
+                "specs": {
+                    "Lamp Base": "E27",
+                    "Colour": "Copper EPL & White Matt Powder",
+                    "Installation": "Table Mounted",
+                    "Warranty": "1 years",
+                    "Watt" : "1 x 40 W/ 9 W",
+                    "Dimesions": "HEIGHT: 51 cm x WIDTH- 22 cm",
+                    "Voltage": "220-240 volts, 50Hz"
+                },
+                "gallery": {
+                    "1": "/Images/Table_Lamps/gaisma/gaisma.png"
+                }
+            },
+
+            {
+                "name": "Gracios",
+                "product_id": "TL140G21",
+                "quantity": "1 N",
+                "mrp": "4 490",
+                "disc": {
+                    "1":"Aptly named, Gracios means graceful in one of the most graceful languages in the world, Spanish. This table lamp adds unparallel elegance to your décor through its sublime look and elevates your spaces with its diffused patterns. It coats your walls and ceiling in an immersive ambience that evokes wonder and awe.",
+                    "2": ""
+                },
+                "material": "Aluminium",
+                "features":{
+                    "1":"Dimmable Optional*",
+                    "2":"Harmonized Designs",
+                    "3":"Ease of interchangeability of lamps",
+                    "4":"Unique Pattern on Illumination"
+                },
+                "specs": {
+                    "Lamp Base": "E27",
+                    "Colour": "Copper EPL & White Matt Powder",
+                    "Installation": "Table Mounted",
+                    "Warranty": "1 year",
+                    "Watt" : "1 x 40 W/ 9 W",
+                    "Dimesions": "HEIGHT: 51 cm x WIDTH- 22 cm",
+                    "Voltage": "220-240 volts, 50Hz"
+                },
+                "gallery": {
+                    "1": "/Images/Table_Lamps/gracios/gracios.png"
+                    
+                }
+            }
+        ]
+    }
+}     
+
+    

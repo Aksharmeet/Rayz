@@ -1,0 +1,110 @@
+{
+    "Floor_Lamp": {
+        "name": "Floor Lamps",
+        "url": "/Images/Floor_Lamps/floor_lamp_main.jpg",
+        "disc": "Scintillating, elegant and equipped with the latest LED technology, these designer floor lamps are made to complement and enhance the décor of a room. This range of modern floor lamps features both uplighters and downlighters.",
+        "category": {
+            "cat": "decorative lighting",
+            "sub_cat": "floor_lamp"
+            },
+        "table_lamps": [
+    
+                {
+                    "name": "Scintiller",
+                    "product_id": "FP1012",
+                    "quantity": "1 N",
+                    "mrp": "33 990",
+                    "disc": {
+                        "1":"Here's a floor lamp that effortlessly manages to amplify the beauty of its surroundings, even when it is not lit. The Scintiller provides a soft and concentrated light for a relaxed working environment.",
+                        "2": ""
+                    },
+                    "material": "Oak wood bracket, solid metallic base and steel support rod with fabric head",
+                    "features":{
+                        "1":"Premium black fabric",
+                        "2":"Unique fishing rod design",
+                        "3":"3 step tilt arrangement",
+                        "4":"Diffused lighting with reduced glare"
+                    },
+                    "specs": {
+                        "Lamp Base": "E27",
+                        "Colour": "Black",
+                        "Installation": "Floor Mounted",
+                        "Warranty": "1 years",
+                        "Watt" : "1 x 40W GLS / 1 x 9W LED lamp / non dimmable",
+                        "Dimesions": "Dia 126 x Height 140 (in cm)",
+                        "Voltage": "220-240 volts, 50Hz"
+                    },
+                    "gallery": {
+                        "1": "/Images/Floor_Lamps/scintiller/scintiller_1.jpg",
+                        "2": "/Images/Floor_Lamps/scintiller/scintiller_2.jpg",
+                        "3": "/Images/Floor_Lamps/scintiller/scintiller_3.jpg"
+                    }
+                },
+    
+                {
+                    "name": "Scintiller",
+                    "product_id": "FP1014",
+                    "quantity": "1 N",
+                    "mrp": "23 490",
+                    "disc": {
+                        "1":"The Scintiller is the perfect fusion of modern technology and traditional aesthetics. It features an elegant curved design with a rich woodgrain finish, fulfilling your various utility and decor purposes.",
+                        "2": ""
+                    },
+                    "material": "Metallic body with fabric head",
+                    "features":{
+                        "1":"Sturdy touch switch",
+                        "2":"Solid base for good balance",
+                        "3":"Minimised glare",
+                        "4":"Touch dimming function"
+                    },
+                    "specs": {
+                        "Lamp Base": "E27",
+                        "Colour": "Woodgrain and silver",
+                        "Installation": "Floor Mounted",
+                        "Warranty": "1 years",
+                        "Watt" : "1 X 60W GLS",
+                        "Dimesions": "Dia 90 x Height 150 (in cm)",
+                        "Voltage": "220-240 volts, 50Hz"
+                    },
+                    "gallery": {
+                        "1": "/Images/Floor_Lamps/scintiller_2/scintiller_1.jpg",
+                        "2": "/Images/Floor_Lamps/scintiller_2/scintiller_2.jpg",
+                        "3": "/Images/Floor_Lamps/scintiller_2/scintiller_3.jpg"
+                    }
+                },
+    
+                {
+                    "name": "Scintiller",
+                    "product_id": "FG1001",
+                    "quantity": "1 N",
+                    "mrp": "19 490",
+                    "disc": {
+                        "1":"The Scintiller makes an instant impact on the ambience of a room. These tall lights illuminate every dark corner and warm up the overall tone of any living space.",
+                        "2": ""
+                    },
+                    "material": "Mild steel with aluminium lamp shade",
+                    "features":{
+                        "1":"Premium matte white finish",
+                        "2":"Use with energy saving lamps",
+                        "3":"Minimised glare",
+                        "4":"Available with matching table lamp"
+                    },
+                    "specs": {
+                        "Lamp Base": "G9",
+                        "Colour": "White",
+                        "Installation": "Floor Mounted",
+                        "Warranty": "1 year",
+                        "Watt" : "3 X 3W LED",
+                        "Dimesions": "Dia 40 x Height 152 (in cm)",
+                        "Voltage": "220-240 volts, 50Hz"
+                    },
+                    "gallery": {
+                        "1": "/Images/Floor_Lamps/scintiller_3/scintiller_1.jpg",
+                        "2": "/Images/Floor_Lamps/scintiller_3/scintiller_2.jpg",
+                        "3": "/Images/Floor_Lamps/scintiller_3/scintiller_3.jpg"
+                        
+                    }
+                }
+            ]
+        }
+    }     

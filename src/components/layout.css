@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --lightest-font: #f5eee4;
+  --light-font: rgba(245, 238, 228, 0.8);
+  --dark-font: #d5a13d;
+  --bg-color: #181818;
+}
+@font-face {
+  font-family: "lucida";
+  src: url("../fonts/Lucida Grande Regular.ttf");
+}
+@font-face {
+  font-family: "sign";
+  src: url("../fonts/SignPainterHouseScript.ttf");
+}
+@font-face {
+  font-family: "copper_bold";
+  src: url("../fonts/copperplate/OPTICopperplate-Heavy.otf");
+}
+@font-face {
+  font-family: "copper_light";
+  src: url("../fonts/copperplate/OPTICopperplate.otf");
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--light-font);
+}
+::selection {
+  color: var(--lightest-font);
+  background-color: var(--dark-font);
+}
