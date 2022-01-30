@@ -95,13 +95,13 @@ const Nav_active = styled.div`
         list-style:none;
         font-family:copper_bold;
         font-size:24px;
-        
+       
     };  
    
     justify-content:space-between;
     li{
         margin:16px 0;
-        transition: all .3s;
+       
         
     };
     pointer-events:${({nav}) => nav ? "":"none"};
@@ -117,13 +117,13 @@ const Divider = styled.div`
     display:flex;
     align-items:center;
     justify-content:center;
-    pointer-events:none;
+    pointer-events:none; //as close_container is full width and height of screen to avoid confliction we gave it pointer events none
 };
 .close-svg{
    width:12%;
    max-width:130px;
    transition:all .3s;
-   pointer-events:auto;
+   pointer-events:${({nav}) => nav ? "auto": "none"};//as opacity is used for removing the divider contaier the pointer events will become none too.
    z-index:1;
 };
 .close-svg:hover{
@@ -137,23 +137,33 @@ const Divider = styled.div`
     width:100vw;
     height:100vh;
     left:0;
-    pointer-events:none;
+    pointer-events:none; //as divider is full width and height of screen to avoid confliction we gave it pointer events none
     
 };
 transition: all .3s;
-display:${({nav}) => nav ? "block" : 'none'}; 
+opacity: ${({nav}) => nav ? "1" : "0"};
 `
 const Nav_left = styled.div`
 background:#926F34;
 width:50vw;
 transition: all .5s;
 padding:0 10px;
+@keyframes size {
+    0% {
+      height: 0;
+    }
+    100% {
+      height:100%;
+    }
+  }
     ul{
         display:flex;
         flex-direction:column;
         padding-top:8vh;
-       
+        overflow:hidden;
+        animation: ${({nav}) => nav ? "size 6s ease" : ""} ;
     };
+    
     li{
         margin:16px 0;
         transition: all .3s;
@@ -169,13 +179,16 @@ transform:${({nav}) => (nav ? "translateX(0vw)" : 'translateX(-100vw)')};
 const Nav_right = styled.div`
 background:#926F34;
 width:50vw;
-transition: all .5s;
+transition: all .3s;
 padding-left: 50px;
     .list_b{
         font-size:12px;
         font-family:copper_light;
         margin:5px 0;
+        transition: all .6s;
+        transform: ${({nav}) => nav ? "translateX(0px)" : "translateX(100VW)"};
     }
+
     .list_b:hover{
         color:#d5a13d;
         cursor:pointer;
