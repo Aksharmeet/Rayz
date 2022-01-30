@@ -84,6 +84,8 @@ const Nav = styled.nav`
     @media (min-width:1500px){
         padding:40px;
     }
+    position:relative;
+    z-index:999;
 
  `
 
@@ -204,6 +206,7 @@ width:50vw;
 transition: all .3s;
 padding-left: 8vw;
 color:rgba(245, 238, 228, 0.8);
+
     .list_b{
         font-size:2vmin;
         font-family:copper_light;
@@ -212,7 +215,8 @@ color:rgba(245, 238, 228, 0.8);
         transform: ${({nav}) => nav ? "translateX(0px)" : "translateX(100VW)"};
     }
     ul{
-    
+        position:relative;
+        top:50vw;
         height:70vh;
         display:flex;
         flex-direction:column;

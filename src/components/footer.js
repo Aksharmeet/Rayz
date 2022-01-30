@@ -69,23 +69,18 @@ function  Footer() {
 }
 const Footer_main = styled.div`
     padding:20px;
+    padding-bottom:100px;
+    min-height:360px;
     display:flex;
     justify-content:space-between;
     align-items:baseline;
     background:#101010;
     flex-wrap:wrap;
     flex:grow;
-    @media (max-width:730px){
-        flex-direction:column;
-        align-items:center;
-        text-align:center;
-    }
-    @media (min-width:1100px){
-        padding:30px;
-    };
-    @media (min-width:1500px){
-        padding:40px;
-    };
+    position:absolute;
+   bottom:0;
+   left:0;
+   right:0;
     h2{
         font-family:copper_light;
         font-size:2.5vmin;
@@ -114,11 +109,35 @@ const Footer_main = styled.div`
         color:rgba(245, 238, 228, 0.8);
         text-decoration:underline;
     }
+    @media (max-width:637px){
+        flex-direction:column;
+        
+        h2{
+            font-size:16px;
+            margin-bottom:32px;
+        }
+        p{
+            font-size:13px;
+            letter-spacing:1px;
+        }
+        a{
+            font-size:13px;
+            letter-spacing:1px;
+        }
+    }
+  
+    @media (min-width:1100px){
+        padding:30px;
+    };
+    @media (min-width:1500px){
+        padding:40px;
+    };
     
 `
 const Rayz = styled.div`
     padding:10px;
     max-width:300px;
+    margin-bottom:32px;
     .rayz{
         font-family:sign;
         font-size:4vmin;
@@ -133,10 +152,10 @@ const Rayz = styled.div`
         max-width:100px;
         justify-content:space-between;
     }
-    @media (max-width:730px){
-       display:flex;
-       flex-direction:column;
-       align-items:center;
+    @media (max-width:637px){
+       .rayz{
+        font-size:26px;
+        }
     }
     
    
@@ -144,10 +163,24 @@ const Rayz = styled.div`
 const Collection = styled.div`
     padding:10px;
     min-width:200px;
+    margin-bottom:32px;
+    @media(max-width:739px){
+        position:relative;
+        right:100px;
+        
+    }
+    @media(max-width:637px){
+        position:relative;
+        right:0;
+        
+    }
+   
+   
 `
 const Policies = styled.div`
     padding:10px;
     min-width:200px;
+    margin-bottom:32px;
 `
 const Hey = styled.div`
     padding:10px;
@@ -173,7 +206,7 @@ const Hey = styled.div`
         font-family:system-ui;
         font-size:1.8vmin;
         letter-spacing:1px;
-        padding: 10px;
+        padding:20px
     }   
     input[type=submit]{
         border-style:none;
@@ -181,6 +214,7 @@ const Hey = styled.div`
         font-family:copper_light;
         font-size:1.5vmin;
         width:contain;
+        cursor:pointer;
     }
     input[type=text]:focus{
         outline:none;
@@ -188,7 +222,16 @@ const Hey = styled.div`
     }
     input[type=submit]:hover{
         color:rgba(245, 238, 228, 0.9);
-        cursor:pointer;
+       
+    }
+    @media (max-width:637px){
+        input[type=text]{
+            font-size:14px;
+            padding:20px
+        }  
+        input[type=submit]{
+            font-size:11px;
+        } 
     }
   
 `
