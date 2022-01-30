@@ -3,14 +3,16 @@ import styled from 'styled-components';
 import Close from "../assets/Group 5.svg"
 import Divide from "../assets/seperating_line.svg"
 import Navburger from "../assets/Nav_mobile.svg"
+import { Link } from "gatsby";
 function Navbar() {
     const [nav, setNav] = useState(false);
   return (
       <Nav>
        
         <Nav_main nav={nav}>
-            <Rayz>
+            <Rayz><Link to="/Home/">
                 <h1>RAYZ</h1>
+                </Link>
             </Rayz>
             <NavBurger>
                 <img class="navburger_svg" onClick={() => setNav(true)} src={Navburger}></img>
@@ -20,14 +22,17 @@ function Navbar() {
         <Nav_active nav={nav}>
             <Nav_left nav={nav}>
                 <ul>
-                    <li>
+                    <li><Link to="/Collection/">
                         COLLECTION
+                        </Link>
                     </li>
-                    <li>
+                    <li><Link to="/About/">
                         ABOUT
+                        </Link>
                     </li>
-                    <li>
+                    <li><Link to="/Contact/">
                         CONTACT
+                        </Link>
                     </li>
                 </ul>
             </Nav_left>
@@ -46,11 +51,13 @@ function Navbar() {
                     <li>
                         FOLLOW US
                     </li>
-                    <li class="list_b">
+                    <li class="list_b"><a href='#'>
                         INSTAGRAM
+                        </a>
                     </li>
-                    <li class="list_b">
+                    <li class="list_b"><a href=''>
                         FACEBOOK
+                        </a>
                     </li>
                     
                 </ul>
@@ -63,11 +70,25 @@ function Navbar() {
   );
 }
 const Nav = styled.nav`
+    padding:20px;
+    a{
+        color:rgba(245, 238, 228, 0.8);
+        text-decoration:none;
+    }
+    a:hover{
+        text-decoration:underline;
+    }
+    @media (min-width:1100px){
+        padding:30px;
+    }
+    @media (min-width:1500px){
+        padding:40px;
+    }
 
-`
+ `
 
 const Nav_main = styled.div`
-    padding:20px;
+  
     display:${({nav}) => nav ? "none" : 'flex'};
     justify-content:space-between;
     
@@ -76,12 +97,15 @@ const Nav_main = styled.div`
 `
 const Rayz = styled.div`
     font-family:sign;
-    font-size:18px;
+    font-size:3vmin;
+    a:hover{
+        text-decoration:none;
+    }
 `
 const NavBurger = styled.div`
   cursor:pointer;
   .navburger_svg{
-    width:30px;
+    width:6vmin;
   }
 `
 const Nav_active = styled.div`
@@ -90,11 +114,12 @@ const Nav_active = styled.div`
     height:100vh;
     position:absolute;
     top:0;
-    color:#f5eee4;
+    left:0;
+   
     ul{
         list-style:none;
         font-family:copper_bold;
-        font-size:24px;
+        font-size:4vmin;
        
     };  
    
@@ -168,10 +193,7 @@ padding:0 10px;
         margin:16px 0;
         transition: all .3s;
     };
-    li:hover{
-        color:#d5a13d;
-        cursor:pointer;
-    }
+  
        
 transform:${({nav}) => (nav ? "translateX(0vw)" : 'translateX(-100vw)')};
 `
@@ -180,18 +202,14 @@ const Nav_right = styled.div`
 background:#926F34;
 width:50vw;
 transition: all .3s;
-padding-left: 50px;
+padding-left: 8vw;
+color:rgba(245, 238, 228, 0.8);
     .list_b{
-        font-size:12px;
+        font-size:2vmin;
         font-family:copper_light;
         margin:5px 0;
         transition: all .6s;
         transform: ${({nav}) => nav ? "translateX(0px)" : "translateX(100VW)"};
-    }
-
-    .list_b:hover{
-        color:#d5a13d;
-        cursor:pointer;
     }
     ul{
     
