@@ -1,12 +1,16 @@
 import * as React from "react"
+import Footer from "../components/footer";
+import Navbar from '../components/navbar';
+import '../components/layout.css'
 
-import Layout from "../components/layout"
 // markup
 const IndexPage = () => {
   return (
-   <Layout>
-    
-   </Layout> 
+    <div>
+      <Navbar/>
+       
+      <Footer/>
+    </div>
   )
 }
 

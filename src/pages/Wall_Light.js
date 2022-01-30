@@ -1,14 +1,14 @@
 import React from 'react';
 import Footer from "../components/footer";
 import Navbar from '../components/navbar';
-function About() {
+function Wall_Light() {
   return (
   <div>
-     <Navbar/>
-     About
-   <Footer/>
+    <Navbar/>
+       W
+     <Footer/>
   </div>
   )
 }
 
-export default About;
+export default Wall_Light;

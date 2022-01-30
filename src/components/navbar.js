@@ -4,13 +4,17 @@ import Close from "../assets/Group 5.svg"
 import Divide from "../assets/seperating_line.svg"
 import Navburger from "../assets/Nav_mobile.svg"
 import { Link } from "gatsby";
+
 function Navbar() {
     const [nav, setNav] = useState(false);
+    
+ 
+   
   return (
       <Nav>
        
         <Nav_main nav={nav}>
-            <Rayz><Link to="/Home/">
+            <Rayz><Link to="/">
                 <h1>RAYZ</h1>
                 </Link>
             </Rayz>
@@ -22,15 +26,15 @@ function Navbar() {
         <Nav_active nav={nav}>
             <Nav_left nav={nav}>
                 <ul>
-                    <li><Link to="/Collection/">
+                    <li><Link exact to="/Collection">
                         COLLECTION
                         </Link>
                     </li>
-                    <li><Link to="/About/">
+                    <li><Link to="/About">
                         ABOUT
                         </Link>
                     </li>
-                    <li><Link to="/Contact/">
+                    <li><Link to="/Contact">
                         CONTACT
                         </Link>
                     </li>
@@ -69,6 +73,7 @@ function Navbar() {
  
   );
 }
+
 const Nav = styled.nav`
     padding:20px;
     a{
@@ -85,8 +90,14 @@ const Nav = styled.nav`
         padding:40px;
     }
     position:relative;
+    top:0;
+    left:0;
+    right:0;
     z-index:999;
-
+   
+   
+    
+    
  `
 
 const Nav_main = styled.div`
@@ -215,12 +226,13 @@ color:rgba(245, 238, 228, 0.8);
         transform: ${({nav}) => nav ? "translateX(0px)" : "translateX(100VW)"};
     }
     ul{
-        position:relative;
+       
         top:50vw;
         height:70vh;
         display:flex;
         flex-direction:column;
         justify-content:end;
+       
     }
    
 transform:${({nav}) => (nav ? "translateX(0vw)" : 'translateX(100vw)')};

@@ -1,14 +1,14 @@
 import React from 'react';
 import Footer from "../components/footer";
 import Navbar from '../components/navbar';
-function About() {
+function Table_Lamp() {
   return (
-  <div>
-     <Navbar/>
-     About
-   <Footer/>
-  </div>
+    <div>
+      <Navbar/>
+          T
+      <Footer/>
+    </div>
   )
 }
 
-export default About;
+export default Table_Lamp;

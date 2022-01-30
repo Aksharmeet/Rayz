@@ -1,14 +1,16 @@
 import React from 'react';
 import Footer from "../components/footer";
 import Navbar from '../components/navbar';
-function About() {
+function Chandelier() {
   return (
   <div>
-     <Navbar/>
-     About
-   <Footer/>
-  </div>
-  )
+    <Navbar/>
+    
+        
+      C
+
+    <Footer/>
+  </div>)
 }
 
-export default About;
+export default Chandelier;

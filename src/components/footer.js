@@ -33,9 +33,9 @@ function  Footer() {
                 </h2>
             </div>
             <ul>
-               <li><Link to="Collection/Chandelier/"> Chandelier</Link></li>
-               <li><Link to="Collection/Table_Lamp/">Table Lamp</Link></li>
-               <li><Link to="Collection/Wall_Light/">Wall Light</Link></li>
+               <li><Link to="/Chandelier"> Chandelier</Link></li>
+               <li><Link to="/Table_Lamp">Table Lamp</Link></li>
+               <li><Link to="/Wall_Light">Wall Light</Link></li>
             </ul>
         </Collection>
         <Policies>
@@ -45,8 +45,8 @@ function  Footer() {
                 </h2>
             </div>
             <ul>
-                <li><Link to="Policies/Privacy_Policy/">Privacy & Policy</Link></li>
-                <li><Link to="Policies/Terms_Conditions/">Terms & Conditions</Link></li>
+                <li><Link to="/Privacy_Policy/">Privacy & Policy</Link></li>
+                <li><Link to="/Terms_Conditions/">Terms & Conditions</Link></li>
             </ul>
         </Policies>
         <Hey>
@@ -78,9 +78,10 @@ const Footer_main = styled.div`
     flex-wrap:wrap;
     flex:grow;
     position:absolute;
-   bottom:0;
-   left:0;
-   right:0;
+    bottom:0;
+    left:0;
+    right:0;
+  
     h2{
         font-family:copper_light;
         font-size:2.5vmin;
