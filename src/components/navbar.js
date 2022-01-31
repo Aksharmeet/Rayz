@@ -89,7 +89,7 @@ const Nav = styled.nav`
     @media (min-width:1500px){
         padding:40px;
     }
-    position:relative;
+    position:absolute;
     top:0;
     left:0;
     right:0;

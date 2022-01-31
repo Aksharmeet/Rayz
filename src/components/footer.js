@@ -77,11 +77,13 @@ const Footer_main = styled.div`
     background:#101010;
     flex-wrap:wrap;
     flex:grow;
-    position:absolute;
+    
     bottom:0;
     left:0;
     right:0;
-  
+    z-index:0;
+   
+    
     h2{
         font-family:copper_light;
         font-size:2.5vmin;

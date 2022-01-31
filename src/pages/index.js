@@ -3,7 +3,7 @@ import Footer from "../components/footer";
 import Navbar from '../components/navbar';
 import styled from "styled-components";
 import '../components/layout.css'
-import Home from "../components/Home"
+import Slider from "../components/Slider"
 // markup
 const IndexPage = () => {
   return (
