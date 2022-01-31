@@ -24,7 +24,9 @@ const Slider = () => (
       }
     `}
     render={data => 
+      
       <Section>
+        
         {data.allContentfulHome.edges.map(({node}) =>
           <Container className={`${node.title.toLowerCase()}_container`} key={node.title}>
             <div className={`${node.title.toLowerCase()}_text`}>
@@ -34,16 +36,19 @@ const Slider = () => (
             <img className={`${node.title.toLowerCase()}_img`} src={node.image.file.url}></img>
           </Container>
          )}
-     
+    
       </Section>
   }
   ></StaticQuery>
 )
 
 const Section = styled.section`
-  width:100%;
   text-align:center;
   position:relative;
+  width:300vw;
+  transform:translateX(-200vw);
+  overflow:hidden;
+  display:flex;
   h1{
     font-family:copper_light;
     font-size:5vmin;
@@ -100,6 +105,7 @@ const Section = styled.section`
   }
 `
 const Container = styled.div`
+ width:100%;
 
   img{
   width:80%;
@@ -109,6 +115,7 @@ const Container = styled.div`
       top:-80px;
   }
   @media (min-width:900px){
+  
      display:flex;
      align-items:center;
     

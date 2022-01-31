@@ -22,7 +22,7 @@ const Main = styled.section`
   background-size:cover;
   background-repeat:no-repeat;
   background-position:center;
-
+  overflow-x:hidden;
   padding:100px 20px 0 20px;
 `
 
