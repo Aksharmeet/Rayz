@@ -13,18 +13,18 @@ function Navbar() {
   return (
       <Nav>
        
-        <Nav_main nav={nav}>
+        <NavMain nav={nav}>
             <Rayz><Link to="/">
                 <h1>RAYZ</h1>
                 </Link>
             </Rayz>
-            <NavBurger>
-                <img class="navburger_svg" onClick={() => setNav(true)} src={Navburger}></img>
+            <NavBurger onClick={() => setNav(true)}>
+                <img alt="navbar" class="navburger_svg"  src={Navburger}></img>
             </NavBurger>
-        </Nav_main>
+        </NavMain>
          
-        <Nav_active nav={nav}>
-            <Nav_left nav={nav}>
+        <NavActive nav={nav}>
+            <NavLeft nav={nav}>
                 <ul>
                     <li><Link exact to="/Collection">
                         COLLECTION
@@ -39,36 +39,36 @@ function Navbar() {
                         </Link>
                     </li>
                 </ul>
-            </Nav_left>
+            </NavLeft>
             <Divider nav ={nav}>
-                <div class="close-container">
-                    <img class="close-svg"src={Close} onClick={()=> setNav(false)}></img>
+                <div class="close-container" onClick={()=> setNav(false)}>
+                    <img alt="closing button" class="close-svg"src={Close}></img>
                 </div>   
                 <div>
-                    <img class="divider"src={Divide}></img>
+                    <img alt="dividing line" class="divider"src={Divide}></img>
                 </div>
             </Divider>
         
         
-            <Nav_right nav={nav}>
+            <NavRight nav={nav}>
                 <ul>
                     <li>
                         FOLLOW US
                     </li>
-                    <li class="list_b"><a href='#'>
+                    <li class="list_b"><a href='#demo'>
                         INSTAGRAM
                         </a>
                     </li>
-                    <li class="list_b"><a href=''>
+                    <li class="list_b"><a href='#demo'>
                         FACEBOOK
                         </a>
                     </li>
                     
                 </ul>
                 
-            </Nav_right>
+            </NavRight>
 
-        </Nav_active>
+        </NavActive>
     </Nav>
  
   );
@@ -100,7 +100,7 @@ const Nav = styled.nav`
     
  `
 
-const Nav_main = styled.div`
+const NavMain = styled.div`
   
     display:${({nav}) => nav ? "none" : 'flex'};
     justify-content:space-between;
@@ -121,7 +121,7 @@ const NavBurger = styled.div`
     width:6vmin;
   }
 `
-const Nav_active = styled.div`
+const NavActive = styled.div`
     display:flex;
     overflow:hidden;
     height:100vh;
@@ -181,8 +181,8 @@ const Divider = styled.div`
 transition: all .3s;
 opacity: ${({nav}) => nav ? "1" : "0"};
 `
-const Nav_left = styled.div`
-background:#926F34;
+const NavLeft = styled.div`
+background:#c09140;
 width:50vw;
 transition: all .5s;
 padding:0 10px;
@@ -211,14 +211,15 @@ padding:0 10px;
 transform:${({nav}) => (nav ? "translateX(0vw)" : 'translateX(-100vw)')};
 `
 
-const Nav_right = styled.div`
-background:#926F34;
+const NavRight = styled.div`
+background:#c09140;
 width:50vw;
 transition: all .3s;
 padding-left: 8vw;
 color:rgba(245, 238, 228, 0.8);
 
     .list_b{
+       
         font-size:2vmin;
         font-family:copper_light;
         margin:5px 0;
@@ -226,7 +227,7 @@ color:rgba(245, 238, 228, 0.8);
         transform: ${({nav}) => nav ? "translateX(0px)" : "translateX(100VW)"};
     }
     ul{
-       
+        position:absolute;
         top:50vw;
         height:70vh;
         display:flex;
