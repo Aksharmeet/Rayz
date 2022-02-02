@@ -224,7 +224,7 @@ color:rgba(245, 238, 228, 0.8);
         font-family:copper_light;
         margin:5px 0;
         transition: all .6s;
-        transform: ${({nav}) => nav ? "translateX(0px)" : "translateX(100VW)"};
+        transform: ${({nav}) => nav ? "translateX(0px)" : "translateX(100vw)"};
     }
     ul{
         position:absolute;
