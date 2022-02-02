@@ -5,6 +5,7 @@
   --lightest-font: #f5eee4;
   --light-font: rgba(245, 238, 228, 0.8);
   --dark-font: #d5a13d;
+  --nav-active: #c09140;
   --bg-color: #181818;
 }
 @font-face {
