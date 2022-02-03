@@ -1,31 +1,25 @@
-import React, { useState } from "react"
+import React from "react"
+import { useState }  from "react"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import arrow from "../assets/arrow.svg";
-import circle from "../assets/Circle.svg"
+import circle from "../assets/Circle.svg";
 function Slider() {
-  const [count,setCount] = useState(0);
-  let value;
-  const matchCount = () =>{
-    if(count === 0){
-      value = "0";
-    } 
-    else if(count === 1){
-      value = "100";
-    }
-    else if(count === 2){
-      value = "200";
-    }
-    }
-    matchCount()
-  console.log(`translate(-${value}vw)`);
-  const increment =() =>{
-    setCount(count + 1);
-  }
-  const decrement =() =>{
-    setCount(count - 1);
-  }
+  const [index,setIndex] = useState(0);
   
+  
+  
+  const increment = () => {
+    setIndex((prevIndex) =>
+    prevIndex === 2 ? 0 : prevIndex + 1
+    );
+   
+  }
+  const decrement = () => {
+    setIndex((prevIndex) =>
+    prevIndex === 0 ? 2 : prevIndex - 1
+  );
+  }
 return (
   <StaticQuery
     query={graphql`
@@ -48,132 +42,97 @@ return (
       }
     `}
     render={data => 
-      <Section>
-        <InnerSection value={value}>
-          {data.allContentfulHome.edges.map(({node}) =>
-            <Container className={`${node.title.toLowerCase()}_container`} key={node.title}>
+      <MainContainer>
+      <SlideShow>
+        <Sliding   style={{ transform: `translate3d(${-index * 100}%, 0, 0)`}}>
+          {data.allContentfulHome.edges.map(({node, index}) =>
+            <Slide className={`${node.title.toLowerCase()}_container`} key={index} >
               <div className={`${node.title.toLowerCase()}_text`}>
               <h1>{node.title}</h1>
               <p>{node.description.description}</p>
               </div>
+              <div className="emptyDiv"></div>
               <img className={`${node.title.toLowerCase()}_img`} src={node.image.file.url}></img>
-            </Container>
+            </Slide>
           )}
-        </InnerSection>
-        <ArrowExplore>
+        </Sliding>
+     </SlideShow>
+     <ArrowExplore>
           <Explore>
             <img src={circle} alt="explore button"/>
           </Explore>
           <Arrows>
             <img alt="left arrow" className="l_arrow"src={arrow} onClick={increment}/>
-            <img alt="right arrow"  className="r_arrow"src={arrow} onClick={decrement}/>
+            <img alt="right arrow"  className="r_arrow"src={arrow} onClick={decrement} />
           </Arrows>
         </ArrowExplore>
-     </Section>
+     </MainContainer>
   }
   ></StaticQuery>
 )
 }
-const Section = styled.section`
-
-`
-const InnerSection = styled.div`
-  text-align:center;
-  position:relative;
-  width:300vw;
-  transform:translate(-100vw)
-  // transform:${({value}) => value & `translate(-${value}vw)`};
-  overflow:hidden;
+const MainContainer = styled.section`
+  width:100%;
   display:flex;
+  flex-direction:column;
+  
+  .chandelier_text{
+    margin-bottom:-100px;
+  }
+  @media(min-width:700px){
+    align-items:left;
+   
+    }
+`
+
+const SlideShow = styled.div`
+  margin: 0 auto;
+  @media(max-width:700px){
+    margin-top:-3vw;
+  }
+  
+`
+const Sliding = styled.div`
+  display:flex;
+  transition:all 1s;
+  align-items:top;
+  text-align:center;
+  width:100vw;
+  
+  img{
+  width:80vw;
+  };
+  @media(min-width:700px){
+    img{
+      width:60vw;
+      }
+      height:60vh;
+  }
   h1{
     font-family:copper_light;
-    font-size:5vmin;
+    color:#f5eee4;
   }
   p{
-    font-family:lucida;
-    font-size:16px;
-    text-align:center;
-    line-height:24px;
-    color:#d5a03dcb;
-    margin:4vh auto 6vh auto;
-    width:80%;
+    width:70vw;
     max-width:500px;
+    color:#f5eee4;
   }
-  .chandelier_container{
-    margin-bottom:-150px;
-    
-  }
-  @media (min-width:900px){
-    text-align:left;
-   
-    h1{
-      font-size:4.5vmin;
-    }
-    p{
-      font-size:2vmin;
-      text-align:left;
-      line-height:3vmin;
-      margin:4vh auto 6vh auto;
-      width:100%;
-      
-    }
-    .chandelier_container{
-      margin-bottom:-190px;
-      
-    }
-    @media (min-width:1400px){
-      h1{
-        font-size:6vmin;
-      }
-      p{
-        font-size:2.5vmin;
-       
-        line-height:4vmin;
-        margin:4vh auto 6vh auto;
-        width:100%;
-        
-      }
-      .chandelier_container{
-        margin-bottom:-190px;
-        
-      }
-    }
-  }
+
 `
-const Container = styled.div`
- width:100%;
+const Slide = styled.div`
+display:flex;
+align-items:center;
+flex-direction:column;
+width:100vw;
+.emptyDiv{
+  width:100vw;
+}
+@media(min-width:700px){
+  flex-direction:row;
+}
 
-  img{
-  width:80%;
-  }
-  .chandelier_img{
-      position:relative;
-      top:-80px;
-  }
-  @media (min-width:900px){
-  
-     display:flex;
-     align-items:center;
-    
-     img{
-       width:60%;
-       display:block;
-       flex-grow:1;
-     }
-     .chandelier_img{
-       position:relative;
-        top:-120px;
-    }
-    div{
-      padding-left:50px;
-    }
-    .chandelier_text{
-      position:relative;
-      top:-120px;
 
-    }
-  }
-  
+ 
 `
 const ArrowExplore = styled.div`
 
@@ -183,7 +142,10 @@ const Explore = styled.div`
   width:100%;
   display:flex;
   justify-content:center;
-  margin-bottom:100px;
+  margin-bottom:50px;
+  @media(max-width:700px){
+    margin-top:-100px;
+    }
   img{
     width:20vw;
     opacity:.6;
@@ -197,7 +159,7 @@ const Explore = styled.div`
     position:relative;
     top:-60px;
   }
-  @media(min-width:900px){
+  @media(min-width:700px){
     display:block;
     margin-left:60px;
     position:relative;
@@ -220,7 +182,7 @@ const Arrows = styled.div`
     top:400px;
    
   }
-  .l_arrow{
+  .r_arrow{
     transform:rotate(180deg);
   }
   .l_arrow, .r_arrow{
@@ -239,6 +201,5 @@ const Arrows = styled.div`
   }
  
 `
-
 
 export default Slider

@@ -4,6 +4,7 @@ import Navbar from '../components/navbar';
 import styled from "styled-components";
 import '../components/layout.css'
 import Slider from "../components/Slider"
+
 // markup
 const IndexPage = () => {
   return (
@@ -11,7 +12,7 @@ const IndexPage = () => {
       <Navbar/>
       <Main>
             <Slider/>
-            
+   
       </Main>
       <Footer/>
     </div>
@@ -24,6 +25,9 @@ const Main = styled.section`
   background-position:center;
   overflow-x:hidden;
   padding:100px 20px 0 20px;
+  
 `
+
+
 
 export default IndexPage
