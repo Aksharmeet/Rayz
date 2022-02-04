@@ -7,7 +7,7 @@ import { Link } from "gatsby";
 
 function Navbar() {
     const [nav, setNav] = useState(false);
-    
+    const [collection, setCollection] = useState(false);
  
    
   return (
@@ -19,16 +19,15 @@ function Navbar() {
                 </Link>
             </Rayz>
             <NavBurger onClick={() => setNav(true)}>
-                <img alt="navbar" class="navburger_svg"  src={Navburger}></img>
+                <img alt="navbar" className="navburger_svg"  src={Navburger}></img>
             </NavBurger>
         </NavMain>
          
         <NavActive nav={nav}>
             <NavLeft nav={nav}>
-                <ul>
-                    <li><Link exact to="/Collection">
+                {!collection ? <ul>
+                    <li onClick={()=> setCollection(true)}>
                         COLLECTION
-                        </Link>
                     </li>
                     <li><Link to="/About">
                         ABOUT
@@ -38,28 +37,46 @@ function Navbar() {
                         CONTACT
                         </Link>
                     </li>
-                </ul>
+                </ul>: 
+               <div className='inner_collection' collection={collection}>
+                    <p onClick={() => setCollection(false)}>back</p>
+                    <ul>
+                        <li><Link to="/Chandelier">
+                            Chandeleir
+                            </Link>
+                        </li>
+                        <li><Link to="/Table_Lamp">
+                            Table Lamp
+                            </Link>
+                        </li>
+                        <li><Link to="/Wall_Light">
+                            Floor Lamp
+                            </Link>
+                        </li>
+                    </ul>
+                </div>}
+
             </NavLeft>
             <Divider nav ={nav}>
-                <div class="close-container" onClick={()=> setNav(false)}>
-                    <img alt="closing button" class="close-svg"src={Close}></img>
+                <div className="close-container" onClick={()=> setNav(false)}>
+                    <img alt="closing button" className="close-svg"src={Close}></img>
                 </div>   
                 <div>
-                    <img alt="dividing line" class="divider"src={Divide}></img>
+                    <img alt="dividing line" className="divider"src={Divide}></img>
                 </div>
             </Divider>
         
         
             <NavRight nav={nav}>
                 <ul>
-                    <li>
+                    <li className='follow'>
                         FOLLOW US
                     </li>
-                    <li class="list_b"><a href='#demo'>
+                    <li className="list_b"><a href='#demo'>
                         INSTAGRAM
                         </a>
                     </li>
-                    <li class="list_b"><a href='#demo'>
+                    <li className="list_b"><a href='#demo'>
                         FACEBOOK
                         </a>
                     </li>
@@ -80,7 +97,10 @@ const Nav = styled.nav`
         color:rgba(245, 238, 228, 0.8);
         text-decoration:none;
     }
-    a:hover{
+    li{
+        cursor:pointer;
+    }
+    li:hover{
         text-decoration:underline;
     }
     @media (min-width:1100px){
@@ -194,21 +214,51 @@ padding:0 10px;
       height:100%;
     }
   }
+  @keyframes slideIn {
+    0% {
+      transform:translateX(-100vw);
+    }
+    100% {
+        transform:translateX(0vw);
+    }
+  }
+
     ul{
         display:flex;
         flex-direction:column;
         padding-top:8vh;
         overflow:hidden;
-        animation: ${({nav}) => nav ? "size 6s ease" : ""} ;
+        animation: ${({collection}) => collection ? '': "slideIn 0.6s ease"} ;
     };
     
     li{
         margin:16px 0;
         transition: all .3s;
-    };
-  
-       
+    }; 
 transform:${({nav}) => (nav ? "translateX(0vw)" : 'translateX(-100vw)')};
+
+.inner_collection{
+    p{
+        font-family:copper_light;
+        margin:20px auto -20px auto;
+        cursor:pointer;
+        transition:all .3s;
+    }
+    p:hover{
+        color:#fff;
+    }
+    @keyframes slideIn {
+        0% {
+          transform:translateX(-100vw);
+        }
+        100% {
+            transform:translateX(0vw);
+        }
+      }
+    
+      animation:${({collection}) => collection ? "" : "slideIn .3s ease"};
+
+}
 `
 
 const NavRight = styled.div`
@@ -218,6 +268,10 @@ transition: all .3s;
 padding-left: 8vw;
 color:rgba(245, 238, 228, 0.8);
 
+    .follow:hover{
+        text-decoration:none;
+        cursor:default;
+    }
     .list_b{
        
         font-size:2vmin;
@@ -226,6 +280,7 @@ color:rgba(245, 238, 228, 0.8);
         transition: all .6s;
         transform: ${({nav}) => nav ? "translateX(0px)" : "translateX(100vw)"};
     }
+   
     ul{
         height:70vh;
         display:flex;
