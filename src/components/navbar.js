@@ -227,8 +227,6 @@ color:rgba(245, 238, 228, 0.8);
         transform: ${({nav}) => nav ? "translateX(0px)" : "translateX(100vw)"};
     }
     ul{
-        position:absolute;
-        top:50vw;
         height:70vh;
         display:flex;
         flex-direction:column;
@@ -236,7 +234,7 @@ color:rgba(245, 238, 228, 0.8);
        
     }
    
-transform:${({nav}) => (nav ? "translateX(0vw)" : 'translateX(100vw)')};
+    transform:${({nav}) => (nav ? "translateX(0vw)" : 'translateX(100vw)')};
 
 
 `
