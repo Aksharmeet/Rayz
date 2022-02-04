@@ -1,14 +1,14 @@
 import React from 'react';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer'
-function Privacy_Policy() {
+function Terms() {
   return (
     <div>
-      <Navbar/>
-        privacy
-      <Footer/>
+        <Navbar/>
+          terms
+        <Footer/>
     </div>
   )
 }
 
-export default Privacy_Policy;
+export default Terms;

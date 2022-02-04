@@ -45,11 +45,11 @@ function Navbar() {
                             Chandeleir
                             </Link>
                         </li>
-                        <li><Link to="/Table_Lamp">
+                        <li><Link to="/Tablelamp">
                             Table Lamp
                             </Link>
                         </li>
-                        <li><Link to="/Wall_Light">
+                        <li><Link to="/Floorlamps">
                             Floor Lamp
                             </Link>
                         </li>
@@ -228,7 +228,7 @@ padding:0 10px;
         flex-direction:column;
         padding-top:8vh;
         overflow:hidden;
-        animation: ${({collection}) => collection ? '': "slideIn 0.6s ease"} ;
+        animation: ${({collection}) => collection ? '': "slideIn 0.3s ease"} ;
     };
     
     li{

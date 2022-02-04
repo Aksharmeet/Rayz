@@ -34,8 +34,8 @@ function  Footer() {
             </div>
             <ul>
                <li><Link to="/Chandelier"> Chandelier</Link></li>
-               <li><Link to="/Table_Lamp">Table Lamp</Link></li>
-               <li><Link to="/Wall_Light">Wall Light</Link></li>
+               <li><Link to="/Tablelamp">Table Lamp</Link></li>
+               <li><Link to="/Floorlamps">Wall Light</Link></li>
             </ul>
         </Collection>
         <Policies>
@@ -45,8 +45,8 @@ function  Footer() {
                 </h2>
             </div>
             <ul>
-                <li><Link to="/Privacy_Policy/">Privacy & Policy</Link></li>
-                <li><Link to="/Terms_Conditions/">Terms & Conditions</Link></li>
+                <li><Link to="/Privacy">Privacy & Policy</Link></li>
+                <li><Link to="/Terms">Terms & Conditions</Link></li>
             </ul>
         </Policies>
         <Hey>

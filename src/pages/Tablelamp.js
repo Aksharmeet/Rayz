@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from "../components/footer";
 import Navbar from '../components/navbar';
-function Table_Lamp() {
+function Tablelamp() {
   return (
     <div>
       <Navbar/>
@@ -11,4 +11,4 @@ function Table_Lamp() {
   )
 }
 
-export default Table_Lamp;
+export default Tablelamp;

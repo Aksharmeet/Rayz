@@ -1,14 +1,15 @@
 import React from 'react';
 import Footer from "../components/footer";
 import Navbar from '../components/navbar';
-function Wall_Light() {
+function Privacy() {
   return (
   <div>
     <Navbar/>
-       W
-     <Footer/>
+    p
+    <Footer/>
   </div>
+  
   )
 }
 
-export default Wall_Light;
+export default Privacy;
