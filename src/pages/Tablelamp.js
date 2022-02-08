@@ -1,14 +1,20 @@
 import React from 'react';
 import Footer from "../components/footer";
 import Navbar from '../components/navbar';
-function Tablelamp() {
+import Intro from '../components/Intro';
+import styled from 'styled-components';
+function Tablelamp({path}) {
+ 
   return (
-    <div>
+    <Body>
       <Navbar/>
-          T
+    <Intro path={path}/>
       <Footer/>
-    </div>
+    </Body>
   )
 }
+const Body = styled.body`
+`
+
 
 export default Tablelamp;
