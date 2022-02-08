@@ -1,14 +1,21 @@
 import React from 'react';
 import Footer from "../components/footer";
 import Navbar from '../components/navbar';
-function Floorlamps() {
+import Intro from '../components/Intro';
+import styled from 'styled-components';
+
+function Floorlamps({path}) {
+
   return (
-  <div>
+  <Body>
     <Navbar/>
-       W
-     <Footer/>
-  </div>
+    <Intro path={path}/>
+    <Footer/>
+  </Body>
   )
 }
+const Body = styled.body`
+`
+
 
 export default Floorlamps;

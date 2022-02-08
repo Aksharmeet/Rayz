@@ -1,16 +1,21 @@
 import React from 'react';
 import Footer from "../components/footer";
 import Navbar from '../components/navbar';
-function Chandelier() {
-  return (
-  <div>
-    <Navbar/>
-    
-        
-      C
+import styled from 'styled-components';
 
+import Intro from '../components/Intro';
+function Chandelier({path} ) {
+
+  
+  return (
+  <Body>
+    <Navbar/>
+    <Intro path={path}/>
     <Footer/>
-  </div>)
+  </Body>)
 }
+const Body = styled.body`
+`
+
 
 export default Chandelier;

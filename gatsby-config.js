@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
       title: `Rayz`,
-    siteUrl: `https://www.yourdomain.tld`
+     siteURL: `http://localhost:8000/`,
+     
   },
   plugins: [{
     resolve: 'gatsby-source-contentful',

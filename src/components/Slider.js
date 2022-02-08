@@ -1,14 +1,17 @@
 import React from "react"
 import { useState }  from "react"
-import { StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql, Link } from "gatsby"
 import styled from "styled-components"
 import arrow from "../assets/arrow.svg";
 import circle from "../assets/Circle.svg";
 function Slider() {
   const [count,setIndex] = useState(0);
-  
-
-  console.log(count);
+  const CapsFirst = (data) =>{
+    const str1 = data.title.charAt(0);
+    const str2 = data.title.slice(1).toLowerCase();
+    const str3=   str2.replace(/\s/g, "");
+    return str1 + str3
+  }
 return (
   <StaticQuery
     query={graphql`
@@ -42,12 +45,11 @@ return (
               <h1>{node.id}</h1>
               <p>{node.description.description}</p>
               <Explore>
-            <img className={`${node.title.toLowerCase().replace(/\s/g, "")}_explore`} src={circle} alt="explore button"/>
-            </Explore>
-              </div>
-              <img className={`${node.title.toLowerCase()}_img`} src={node.image.file.url}></img>
-              </div>
-             
+                 <Link to={`/${CapsFirst(node)}`}><img src={circle} className={`${node.title.toLowerCase().replace(/\s/g, "")}_explore`}alt="explore button"/></Link>
+              </Explore>
+                </div>
+                  <img className={`${node.title.toLowerCase()}_img`} src={node.image.file.url}></img>
+                </div>
             </Slide>
           )}
         </Sliding>
@@ -190,7 +192,7 @@ const Explore = styled.div`
     }
     .floorlamps_explore{
       position:absolute;
-      top:5vw;
+      top:2vw;
     }
     @media (min-width:1300px){
       .chandelier_explore{

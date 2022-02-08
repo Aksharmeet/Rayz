@@ -5,12 +5,15 @@ import styled from "styled-components";
 import '../components/layout.css'
 import Slider from "../components/Slider"
 
+
 // markup
 const IndexPage = () => {
+
   return (
     <div>
       <Navbar/>
       <Main>
+       
             <Slider/>
    
       </Main>
@@ -27,6 +30,7 @@ const Main = styled.section`
   padding:100px 20px 0 20px;
   
 `
+
 
 
 

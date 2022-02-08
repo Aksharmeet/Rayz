@@ -267,30 +267,29 @@ width:50vw;
 transition: all .3s;
 padding-left: 8vw;
 color:rgba(245, 238, 228, 0.8);
-
+transform:${({nav}) => (nav ? "translateX(0vw)" : 'translateX(100vw)')};
     .follow:hover{
         text-decoration:none;
         cursor:default;
     }
     .list_b{
-       
         font-size:2vmin;
         font-family:copper_light;
         margin:5px 0;
         transition: all .6s;
         transform: ${({nav}) => nav ? "translateX(0px)" : "translateX(100vw)"};
     }
-   
     ul{
-        height:70vh;
+        position: -webkit-sticky;
+        position: -moz-sticky;
+        position: -ms-sticky;
+        position: -o-sticky;
+        top:50vh;
+        height:50vh;
         display:flex;
         flex-direction:column;
         justify-content:end;
        
     }
-   
-    transform:${({nav}) => (nav ? "translateX(0vw)" : 'translateX(100vw)')};
-
-
 `
 export default Navbar;
